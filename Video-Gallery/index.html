@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="gallery">
+        <div id="sliding-image">
+            <span id="left">
+                <button class="arrow-left" onclick="previous()">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
+                        height="20px" viewBox="0 0 100 100" xml:space="preserve">
+                        <polyline fill="none" stroke="#3B3A39" stroke-width="25" stroke-linecap="round"
+                            stroke-linejoin="round" points="
+                            60,30 0,70 60,110 
+                       " />
+                    </svg>
+                </button>
+            </span>
+            <span id="current"></span>
+            <span id="right">
+                <button class="arrow-right" onclick="next()">
+                    <svg width="20px" height="20px" viewBox="0 0 100 100" xml:space="preserve">
+                        <polyline fill="none" stroke="#3B3A39" stroke-width="25" stroke-linecap="round"
+                            stroke-linejoin="round" points="
+                            0,30 60,70 0,110" />
+                    </svg>
+                </button>
+            </span>
+        </div>
+
+        <div id="storage">
+            <img src="https://cdn.pixabay.com/photo/2022/10/18/20/27/old-man-7531093__480.jpg">
+            <img src="https://cdn.pixabay.com/photo/2022/09/20/20/22/blueberries-7468718__480.jpg">
+            <img src="https://cdn.pixabay.com/photo/2022/10/07/10/51/the-glacier-7504780__480.jpg">
+            <img src="https://cdn.pixabay.com/photo/2022/09/08/10/19/eye-7440640_1280.jpg">
+            <img src="https://cdn.pixabay.com/photo/2022/09/24/13/41/horizon-7476439__480.jpg">
+            <img src="https://cdn.pixabay.com/photo/2022/10/27/05/38/cat-7550102__480.jpg">
+            <img src="https://cdn.pixabay.com/photo/2022/10/19/21/11/white-flowers-7533656__480.jpg">
+            <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__480.jpg">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
