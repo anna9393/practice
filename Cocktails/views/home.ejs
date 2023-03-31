@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cocktails</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+
+<body>
+    <h1>Cocktails</h1>
+
+    <ul>
+        <a>ALL</a>
+        <% list.forEach(e=>{ %>
+            <a>
+                <%= e.toUpperCase() %>
+            </a>
+            <% }); %>
+    </ul>
+
+    <table>
+        <tr>
+            <th class="title" id="name">NAME</th>
+            <th class="title" id="price">PRICE</th>
+        </tr>
+
+        <% drinks.forEach(e=>{ %>
+            <tr>
+                <td>
+                    <strong>
+                        <% if(e.isAlcoholic){ %>
+                            <%= e.name %>
+                                <% } else{ %>
+                                    <%= e.name + " (non-alcoholic)" %>
+                                        <% } %>
+
+                    </strong><br>
+                    <%= e.contains %>
+                </td>
+                <td class="price">
+                    <%= e.price %>
+                </td>
+            </tr>
+            <% }); %>
+
+    </table>
+</body>
+
+</html>
