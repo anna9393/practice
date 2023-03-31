@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 20px 5px;
+    align-items: flex-start;
+}
+
+a {
+    margin-right: 10px;
+    color: rgb(70, 34, 103);
+    font-weight: 700;
+}
+
+table {
+    margin: 10px 0;
+}
+
+.title {
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+td.price {
+    text-align: center;
+    font-weight: 700;
+}
+
+td.price::after {
+    content: ' Ft';
+}
+
+tr {
+    height: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: bisque;
+}
