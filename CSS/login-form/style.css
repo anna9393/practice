@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 450px;
+    background-color: white;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(125, 123, 124, 0.39);
+}
+
+label {
+    display: block;
+    margin: 5px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid rgba(125, 123, 124, 0.39);
+    border-radius: 4px;
+}
+
+.main-div {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.title {
+    width: 100%;
+    margin: 20px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.small {
+    margin-top: 25px;
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+input[type=button] {
+    border: 0;
+    border-radius: 50px;
+    width: 125px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+input[type=text]:focus {
+    border: 2px solid rgb(69, 132, 69);
+}
+
+input[type=password]:focus {
+    border: 2px solid rgb(69, 132, 69);
+}
+
+i {
+    margin: -30px;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.forgot {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: x-small;
+    padding-top: 15px;
+    margin-left: 220px;
+}
