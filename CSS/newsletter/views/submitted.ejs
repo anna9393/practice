@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Newsletter</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial;
+      background-image: linear-gradient(to top right, rgba(194, 81, 81, 0.876), rgb(255, 166, 97));
+    }
+
+    div {
+      width: 60%;
+      height: 33%;
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 130px;
+      box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-items: center;
+      align-items: center;
+    }
+
+    h3 {
+      margin: auto;
+      color: rgba(84, 83, 83);
+      font-size: 18px;
+    }
+
+    .details {
+      color: rgb(48, 48, 48);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h3>Thank you <span class="details">
+        <%= name %>
+      </span>we will send updates at <span class="details">
+        <%= email %>
+      </span>
+    </h3>
+  </div>
+</body>
+
+</html>
