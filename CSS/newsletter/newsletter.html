@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial;
+      background-image: linear-gradient(to top right, rgba(194, 81, 81, 0.876), rgb(255, 166, 97));
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div {
+      width: 700px;
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      opacity: 0.9;
+      border-radius: 120px;
+      box-shadow: 50px 50px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 70%;
+    }
+
+    h1 {
+      letter-spacing: 1px;
+      font-weight: 500;
+      width: 70%;
+      margin-top: 0;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    label {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    input {
+      margin-bottom: 50px;
+      height: 35px;
+      border: none;
+      background-image: linear-gradient(to right, rgba(209, 209, 209, 0.7), rgba(255, 255, 255, 0.734));
+      border-radius: 13px;
+      text-indent: 15px;
+      font-size: 20px;
+    }
+
+    button {
+      width: 160px;
+      margin: auto;
+      height: 50px;
+      border: none;
+      border-radius: 28px;
+      background-image: linear-gradient(to right, rgb(77, 182, 247), rgb(60, 243, 173));
+      color: white;
+      font-size: 28px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Subscribe to our newsletter</h1>
+    <form id="newsletter" action="http://localhost:3000/signup" method="post">
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="user_name" placeholder="name" required>
+      <label for="email">Email address</label>
+      <input type="text" id="email" name="user_email" placeholder="email" required>
+      <button type="submit">Sign up!</button>
+    </form>
+  </div>
+</body>
+
+</html>
